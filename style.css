@@ -1,0 +1,508 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata';
+
+}
+body
+{
+    background: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.weather-row
+{
+    padding: 100px 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h1
+{
+    color: #228B22;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.weather-block
+{
+    border: solid 2px #228B22;
+    border-radius: 6px;
+    padding: 40px 50px;
+    background-color: rgb(211, 226, 211,0.85);
+    position: relative;
+}
+.details
+{    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.date-block
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: rgb(213, 241, 184);
+    align-items: center;
+    height: 60px;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.city-name , .temperature , .feels-like ,.weather-description , .weather-icon , .pressure, .humidity, .date, .time , .dayOfWeek
+{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(39, 59, 19);
+    font-weight: 700;
+}
+.city-name
+{
+    margin-bottom: 15px;
+}
+.span
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+.city-name
+{
+    font-size: 26px;
+    font-weight: 700;
+}
+.common
+{
+    box-sizing: content-box;
+    border: solid 2px #228B22;
+    border-radius: 4px;
+    padding: 20px 25px;
+}
+.weather-description
+{
+    font-size: 26px;
+}
+.weather-description::first-letter
+{
+    text-transform: uppercase;
+}
+.search-weather
+{
+    line-height: 300px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.city-search::placeholder
+{
+    font-size: 20px;
+    font-family: 'Inconsolata';
+}
+input[type~="text"], input[type~="password"], input[type~="select"], textarea
+{font-size: 20px;} 
+.search-button
+{
+    padding: 26px 15px;
+    background-color: #228B22;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: solid 2px #228B22;
+}
+.search-button:hover
+{
+    color: #228B22;
+    background-color: rgb(211, 226, 211);
+
+ 
+}
+.city-search:focus
+{
+    outline: none;
+}
+.search-button:focus
+{
+    outline: none;
+}
+.city-search
+{
+    max-width: 250px;
+    width: 350px;
+    background-color:rgb(211, 226, 211);
+    border:none;
+    margin-right: 15px;
+    padding: 15px 25px;
+    border-radius: 4px;
+}
+.container
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row
+{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+/* XS */
+@media(max-width:576px)
+{
+    .col-xs-1
+    {
+        flex : 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-xs-2
+    {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-xs-3
+    {
+        flex:0 0 25%;
+        max-width:25%;
+    }
+    .col-xs-4
+    {
+        flex:0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-xs-5
+    {
+        flex:0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-xs-6
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-xs-7
+    {
+        flex:0 0 58.33333%;
+        max-width:58.33333%;
+    }
+    .col-xs-8
+    {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-xs-9
+    {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-xs-10
+    {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-xs-11
+    {
+        flex: 0 0 91.666667%;
+        max-width: 91.66667%;
+    }
+    .col-xs-12
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container
+    {
+        max-width: auto;
+    }
+
+}    
+
+
+/* SM */
+@media(min-width:576px)  
+{
+    .col-sm-1
+    {
+        flex : 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-sm-2
+    {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-sm-3
+    {
+        flex:0 0 25%;
+        max-width:25%;
+    }
+    .col-sm-4
+    {
+        flex:0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-sm-5
+    {
+        flex:0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-sm-6
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-sm-7
+    {
+        flex:0 0 58.33333%;
+        max-width:58.33333%;
+    }
+    .col-sm-8
+    {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-sm-9
+    {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-sm-10
+    {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-sm-11
+    {
+        flex: 0 0 91.666667%;
+        max-width: 91.66667%;
+    }
+    .col-sm-12
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container
+    {
+        max-width: 540px;
+    }
+
+} 
+/* MD */
+@media(min-width:768px)
+{
+    .container
+    {
+        max-width: 720px;
+    }
+    .col-md-1
+    {
+        flex : 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-md-2
+    {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-3
+    {
+        flex:0 0 25%;
+        max-width:25%;
+    }
+    .col-md-4
+    {
+        flex:0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-md-5
+    {
+        flex:0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-md-6
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-md-7
+    {
+        flex:0 0 58.33333%;
+        max-width:58.33333%;
+    }
+    .col-md-8
+    {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-md-9
+    {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-md-10
+    {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-md-11
+    {
+        flex: 0 0 91.666667%;
+        max-width: 91.66667%;
+    }
+    .col-md-12
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }   
+
+
+}  
+/* LG */
+@media(min-width:992px)
+{
+    .container
+    {
+        max-width: 960px;
+    }
+    .col-lg-1
+    {
+        flex : 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-lg-2
+    {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-lg-3
+    {
+        flex:0 0 25%;
+        max-width:25%;
+    }
+    .col-lg-4
+    {
+        flex:0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-lg-5
+    {
+        flex:0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-lg-6
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-lg-7
+    {
+        flex:0 0 58.33333%;
+        max-width:58.33333%;
+    }
+    .col-lg-8
+    {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-lg-9
+    {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-lg-10
+    {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-lg-11
+    {
+        flex: 0 0 91.666667%;
+        max-width: 91.66667%;
+    }
+    .col-lg-12
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }  
+
+
+
+}
+ /*XL*/
+ @media(min-width:1200px)
+{
+    .container
+    {
+        max-width: 1140px;
+    }
+    .col-xl-1
+    {
+        flex : 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-xl-2
+    {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-xl-3
+    {
+        flex:0 0 25%;
+        max-width:25%;
+    }
+    .col-xl-4
+    {
+        flex:0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-xl-5
+    {
+        flex:0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-xl-6
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-xl-7
+    {
+        flex:0 0 58.33333%;
+        max-width:58.33333%;
+    }
+    .col-xl-8
+    {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667;
+    }
+    .col-xl-9
+    {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-xl-10
+    {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-xl-11
+    {
+        flex: 0 0 91.666667%;
+        max-width: 91.66667%;
+    }
+    .col-xl-12
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}    

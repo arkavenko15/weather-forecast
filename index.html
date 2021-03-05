@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="weather-row">
+                        <div class="search-weather">
+                            <input type="text" class="city-search" placeholder="Enter city name...">
+                            <input type="submit" value="Search" class="search-button">
+                        </div>
+                        <div class="weather-block">
+                            <div class="date-block">
+                                <div class="date"></div>
+                                <div class="dayOfWeek"></div>
+                                <div class="time"></div>
+                            </div>
+                            <h1>Weather Forecast</h1>
+                            <div class="city-name">London</div>
+                                <div class="details">
+                                        <div class="detail">
+                                            <span class="span">Temperature</span>
+                                            <div class="temperature">4°</div>
+                                        </div>
+                                        <div class="detail">
+                                            <span class="span">Feels like</span>
+                                            <div class="feels-like">5°</div>  
+                                        </div>
+                                        <div class="detail">
+                                            <span class="span">Pressure</span>
+                                            <div class="pressure">1012</div>     
+                                        </div>
+                                        <div class="detail">   
+                                            <span class="span">Humidity </span>
+                                            <div class="humidity">87%</div>  
+                                        </div>        
+                                </div>    
+                                  
+                                <div class="common"> 
+                                    <div class="weather-description">Clouds</div>
+                                    <div class="weather-icon"><img src="images/weather-icon.png" alt=""></div>
+                                </div> 
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+</body>
+<script src="app.js"></script>
+</html>
