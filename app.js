@@ -52,7 +52,7 @@ button.addEventListener("click",function()
 {
     let city = input.value;
     function setLinkValue(city) {
-      var link = 'http://api.openweathermap.org/data/2.5/weather?q=KYIV&units=metric&APPID=5d066958a60d315387d9492393935c19';
+      var link = 'https://api.openweathermap.org/data/2.5/weather?q=KYIV&units=metric&APPID=5d066958a60d315387d9492393935c19';
       console.log(link);
       newLink= link.replace('KYIV', city);
       console.log(newLink);
